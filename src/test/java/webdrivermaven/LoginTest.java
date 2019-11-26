@@ -20,9 +20,12 @@ public void setup() throws InterruptedException
 	driver.get("http://18.191.28.50:8080/RNT-UAT/");
 	
 	String actualUrl="http://18.191.28.50:8080/RNT-UAT/"; 
-	String expectedUrl= driver.getCurrentUrl(); 
-	Assert.assertEquals(expectedUrl,actualUrl);
-	System.out.println("Inside URL test");
+	  String a="hd2";
+	  driver.findElement(By.xpath("//input[contains(@placeholder,'Please Enter User ID')]")).sendKeys(a);
+	  WebElement password = driver.findElement(By.xpath("//input[contains(@placeholder,'Please Enter Password')]"));
+	  password.sendKeys("1002");
+	  
+	  driver.findElement(By.xpath("//button[@class='btn btn-info btn-block']")).click();;
 	Reporter.log("URL test Passed123");
 	Thread.sleep(5000);
 	}
