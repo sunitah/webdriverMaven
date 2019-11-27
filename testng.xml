@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      
+     	<class name="FirstTestngPackage.Demo2"/>
+     	<class name="FirstTestngPackage.ErrorValidationonLogin"/>
+     	<class name="FirstTestngPackage.NegativeSearchRMS"/>
+ 		<class name="FirstTestngPackage.UpdateProfileRMSPer2Demo"/>
+ 		<class name="FirstTestngPackage.Logout"/>
+ 		
+ 		
+ 		<!--Your comment
+
+  		<class name="FirstTestngPackage.UpdateProfileRMSMenu"/>
+ 		<class name="FirstTestngPackage.ChangePasswordRMS"/>
+ 		 
+ 		
+ 	-->	
+ 		
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  
+</suite> <!-- Suite -->
